@@ -1,0 +1,113 @@
+.page {
+    background-color: rgb(24, 26, 47);
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* =============================================================== */
+
+.logo {
+    width: 175px;
+    height: 40px;
+    background-image: url(./images/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* =============================================================== */
+
+.header {
+    background-color: rgb(255, 255, 255);
+    padding: 36px 260px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+}
+
+.company-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 414px;
+    margin-right: 90px;
+}
+
+.decorative-line {
+    width: 4px;
+    height: 29px;
+    background-image: url(./images/decorative-line.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.company-name {
+    margin-top: 0; /* reset browser margin */
+    margin-bottom: 0; /* reset browser margin */
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 175px;
+}
+
+.company-info-list {
+    margin-top: 0; /* reset browser margin */
+    margin-bottom: 0; /* reset browser margin */
+    padding-left: 0; /* reset browser padding */
+    list-style: none;
+    display: flex;
+
+}
+
+.list-item {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.item-icon {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 18px;
+}
+
+.schedule-icon {
+    background-image: url(./images/icon-schedule.svg);
+}
+
+.geolocation-icon {
+    background-image: url(./images/icon-geolocation.svg);
+}
+
+.underline {
+    text-decoration: underline dotted rgb(97, 65, 184);
+}
+
+.phone-icon {
+    background-image: url(./images/icon-phone.svg);
+}
+
+
+/* =============================================================== */
+
+.content {
+    background-color: rgb(255, 255, 255);
+    padding: 116px 260px 0;
+}
+
+/* =============================================================== */
+
+.footer {
+    background-color: rgb(24, 26, 47);
+    color: rgb(255, 255, 255);
+    padding: 23px 260px 26px;
+    display: flex;
+    justify-content: space-between;
+} 
