@@ -1,9 +1,9 @@
 .page {
-    background-color: rgb(24, 26, 47);
     max-width: 100%;
     min-width: 320px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
+    color: #181a2f;
 }
 
 /* =============================================================== */
@@ -20,7 +20,7 @@
 /* =============================================================== */
 
 .header {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 36px 260px 30px;
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@
     margin-bottom: 0; /* reset browser margin */
     font-size: 14px;
     font-weight: 500;
-    color: #B19CD7;
+    color: #b19cd7;
 }
 
 .schedule-mode {
@@ -104,8 +104,8 @@
 .geolocation {
     font-size: 14px;
     font-weight: 600;
-    color: #6141B8;
-    text-decoration: underline dotted rgb(97, 65, 184);
+    color: #6141b8;
+    text-decoration: underline dotted;
 }
 
 .phone-icon {
@@ -115,21 +115,21 @@
 .phone-number {
     font-size: 18px;
     font-weight: 900;
-    color: #6141B8;
+    color: #6141b8;
 }
 
 /* =============================================================== */
 
 .content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 116px 260px 0;
 }
 
 /* =============================================================== */
 
 .footer {
-    background-color: rgb(24, 26, 47);
-    color: rgb(255, 255, 255);
+    background-color: #181a2f;
+    color: #ffffff;
     padding: 23px 260px 26px;
     display: flex;
     justify-content: space-between;
