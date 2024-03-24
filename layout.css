@@ -43,19 +43,22 @@ html {
     max-width: var(--safe-frame);
 }
 
-.main-screen .center {
+/* .main-screen .center {
+    background: #744b4b;
+    height: 1016px;
+} */
+
+.main-screen {
     background: #744b4b;
     height: 1016px;
 }
 
+
 .underlay-promo {
-    background: #413e3e;
+    background: #533dbb;
     height: 223px;
     margin-top: -116px!important;
     border-radius: 35px;
-    max-width: var(--safe-frame);
-    /* position: relative; */
-    /* top: -264px; */
 }
 
 .promo {
@@ -64,6 +67,12 @@ html {
     margin-top: -259px!important;
     border-radius: 40px;
     max-width: calc(var(--safe-frame) - 87px)!important;
+}
+
+.needs {
+    background: #2a352a;
+    height: 948px;
+    /* max-width: var(--safe-frame); */
 }
 
 /* =============================================================== */
@@ -165,11 +174,6 @@ html {
 } */
 
 /* =============================================================== */
-
-/* .content {
-    background-color: #ffffff;
-    padding: 0 260px;
-} */
 
 .section-title {
     font-size: 56px;
