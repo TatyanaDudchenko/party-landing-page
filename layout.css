@@ -53,7 +53,6 @@ html {
     height: 1016px;
 }
 
-
 .underlay-promo {
     background: #533dbb;
     height: 223px;
@@ -70,9 +69,54 @@ html {
 }
 
 .needs {
+    box-sizing: border-box;
     background: #2a352a;
     height: 948px;
-    /* max-width: var(--safe-frame); */
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+}
+
+.title {
+    color: #2629ed;
+    font-size: 51px;
+    font-weight: 1000;
+    letter-spacing: 4.6px;
+    align-self: center;
+}
+
+.message {
+    border-radius: 35px;
+    align-self: flex-end;
+    contain: content;
+    display: flex;
+}
+
+.company-message {
+    margin-top: 128px;
+    max-width: 542px;
+}
+
+.client-message {
+    margin-top: 22px;
+    max-width: 430px;
+}
+
+.message-text {
+    padding-top: 59px;
+    padding-right: 59px;
+    padding-bottom: 59px;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1.5px;
+    color: red;
+    background: #5adb5a;
+}
+
+.message-author {
+    min-width: 141px;
+    min-height: 200px;
+    background: blueviolet;
 }
 
 /* =============================================================== */
