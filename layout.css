@@ -41,48 +41,60 @@ html {
     outline: 1px solid red;
     margin: 0 auto;
     max-width: var(--safe-frame);
+    display: flex;
 }
 
-/* .main-screen .center {
-    background: #744b4b;
-    height: 1016px;
-} */
-
 .main-screen {
+    background: #734b74;
+    /* height: 1016px; */
+}
+
+.main-screen .center {
     background: #744b4b;
-    height: 1016px;
+    min-height: 1016px;
+    width: 100%;
+    padding-top: 65px;
+    box-sizing: border-box;
+}
+
+.main-screen .title {
+    max-width: 630px;
+    align-self: start;
+    /* font-size: 52px; */
 }
 
 .underlay-promo {
     background: #533dbb;
-    height: 223px;
+    min-height: 223px;
     margin-top: -116px!important;
     border-radius: 35px;
 }
 
 .promo {
     background: #e16161;
-    height: 298px;
+    min-height: 298px;
     margin-top: -259px!important;
     border-radius: 40px;
     max-width: calc(var(--safe-frame) - 87px)!important;
 }
 
-.needs {
+.needs-screen {
     box-sizing: border-box;
     background: #2a352a;
-    height: 948px;
+    min-height: 948px;
     display: flex;
     flex-direction: column;
-    padding-top: 130px;
+    padding-top: 125px;
+    padding-bottom: 159px;
 }
 
 .title {
     color: #2629ed;
-    font-size: 51px;
+    font-size: 52px;
     font-weight: 1000;
-    letter-spacing: 4.6px;
+    letter-spacing: 4.5px;
     align-self: center;
+    line-height: 1.3;
 }
 
 .message {
@@ -98,14 +110,14 @@ html {
 }
 
 .client-message {
-    margin-top: 22px;
+    margin-top: 30px;
     max-width: 430px;
 }
 
 .message-text {
-    padding-top: 59px;
-    padding-right: 59px;
-    padding-bottom: 59px;
+    padding-top: 56px;
+    padding-right: 56px;
+    padding-bottom: 56px;
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 1.5px;
@@ -117,6 +129,29 @@ html {
     min-width: 141px;
     min-height: 200px;
     background: blueviolet;
+}
+
+.offer-screen {
+    background: #c5692b;
+    min-height: 1071px;
+    box-sizing: border-box;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-screen .message {
+    max-width: 317px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.offer-screen .center {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* =============================================================== */
