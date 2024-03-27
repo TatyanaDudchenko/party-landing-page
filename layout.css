@@ -37,7 +37,7 @@ html {
     /* width: 100%; */
 }
 
-.center {
+.safe-frame {
     outline: 1px solid red;
     margin: 0 auto;
     max-width: var(--safe-frame);
@@ -46,27 +46,27 @@ html {
 
 .main-screen {
     background: #734b74;
-    /* height: 1016px; */
+    padding-top: 65px;
 }
 
-.main-screen .center {
+.main-screen .safe-frame {
     background: #744b4b;
-    min-height: 1016px;
+    min-height: 949px;
     width: 100%;
-    padding-top: 65px;
-    box-sizing: border-box;
 }
 
 .main-screen .title {
     max-width: 630px;
     align-self: start;
-    /* font-size: 52px; */
+}
+
+.promo-container {
+    margin-top: -115px;
 }
 
 .underlay-promo {
     background: #533dbb;
     min-height: 223px;
-    margin-top: -116px!important;
     border-radius: 35px;
 }
 
@@ -97,61 +97,90 @@ html {
     line-height: 1.3;
 }
 
-.message {
+.card {
     border-radius: 35px;
-    align-self: flex-end;
     contain: content;
     display: flex;
 }
 
-.company-message {
-    margin-top: 128px;
-    max-width: 542px;
-}
-
-.client-message {
-    margin-top: 30px;
-    max-width: 430px;
-}
-
-.message-text {
-    padding-top: 56px;
-    padding-right: 56px;
-    padding-bottom: 56px;
+.card-text {
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 1.5px;
     color: red;
     background: #5adb5a;
+    height: 100%;
 }
 
-.message-author {
+.card-image {
+    background: blueviolet;
+}
+
+.needs-screen .card {
+    align-self: flex-end;
+}
+
+.needs-screen .card-text {
+    padding-top: 56px;
+    padding-right: 56px;
+    padding-bottom: 56px;
+}
+
+.needs-screen .card-image {
     min-width: 141px;
     min-height: 200px;
-    background: blueviolet;
+}
+
+.company-message-card {
+    margin-top: 128px;
+    max-width: 542px;
+}
+
+.client-message-card {
+    margin-top: 30px;
+    max-width: 430px;
 }
 
 .offer-screen {
     background: #c5692b;
     min-height: 1071px;
     box-sizing: border-box;
-    padding-top: 130px;
+    padding-top: 120px;
+    padding-bottom: 134px;
     display: flex;
     flex-direction: column;
 }
 
-.offer-screen .message {
+.offer-screen .card {
     max-width: 317px;
-    display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
+    height: 100%;
 }
 
-.offer-screen .center {
+.offer-screen .safe-frame {
     width: 100%;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: repeat(4, 313px);
+    grid-gap: 26px;
+}
+
+.offer-screen .card-image {
+    min-height: 136px;
+}
+
+.offer-screen .card-text {
+    padding: 0 30px 44px 59px;
+}
+
+.hall-screen {
+    box-sizing: border-box;
+    background: #28352a;
+    min-height: 1580px;
+    padding-top: 125px;
+    /* padding-bottom: 159px; */
+    flex-direction: column;
 }
 
 /* =============================================================== */
