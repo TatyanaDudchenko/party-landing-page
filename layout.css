@@ -72,10 +72,20 @@ html {
 
 .promo {
     background: #e16161;
-    min-height: 298px;
+    /* min-height: 298px; */
+    /* min-height: var(--promo-height); */
     margin-top: -259px!important;
     border-radius: 40px;
     max-width: calc(var(--safe-frame) - 87px)!important;
+    padding: 64px;
+    box-sizing: border-box;
+}
+
+.promo-content {
+    background: #dbd92d;
+    height: 167px;
+    width: 100%;
+    border: 1px solid blue;
 }
 
 .needs-screen {
@@ -187,7 +197,35 @@ html {
 .screen-a {
     background: #69dfd7;
     min-height: 970px;
+    padding-top: 1px;
+    /* display: flex; */
+    /* box-sizing: border-box; */
 }
+
+.screen-a .promo-container {
+    margin-top: 341px;
+}
+
+.screen-a .underlay-promo {
+    min-height: 451px;
+}
+
+.screen-a .promo {
+    margin-top: -488px!important;
+}
+
+.screen-a .promo-content {
+    height: 396px;
+}
+
+/* .screen-a .underlay-promo {
+    min-height: 223px;
+}
+
+.screen-a .promo {
+    min-height: 298px;
+    margin-top: -259px!important;
+} */
 
 .screen-b {
     background: #22af0f;
@@ -197,6 +235,25 @@ html {
 .screen-c {
     background: #c5692b;
     min-height: 1216px;
+}
+
+.screen-c .safe-frame {
+    min-height: 1000px;
+}
+
+.screen-d {
+    background: #22af0f;
+    min-height: 870px;
+}
+
+.screen-e {
+    background: #c5692b;
+    min-height: 1218px;
+}
+
+.screen-f {
+    background: #22af0f;
+    min-height: 1406px;
 }
 
 /* =============================================================== */
