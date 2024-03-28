@@ -174,13 +174,29 @@ html {
     padding: 0 30px 44px 59px;
 }
 
-.hall-screen {
+.halls-screen {
     box-sizing: border-box;
-    background: #28352a;
+    background: #b91467;
     min-height: 1580px;
     padding-top: 125px;
-    /* padding-bottom: 159px; */
     flex-direction: column;
+    position: relative;
+    margin-bottom: -167px;
+}
+
+.screen-a {
+    background: #69dfd7;
+    min-height: 970px;
+}
+
+.screen-b {
+    background: #22af0f;
+    min-height: 964px;
+}
+
+.screen-c {
+    background: #c5692b;
+    min-height: 1216px;
 }
 
 /* =============================================================== */
