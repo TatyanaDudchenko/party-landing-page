@@ -234,11 +234,16 @@ html {
 
 .screen-c {
     background: #c5692b;
-    min-height: 1216px;
+    padding-top: 125px;
+    /* box-sizing: border-box; */
+    padding-bottom: 113px;
+    /* min-height: 1216px; */
 }
 
 .screen-c .safe-frame {
-    min-height: 1000px;
+    min-height: 978px;
+    display: flex;
+    flex-direction: column;
 }
 
 .screen-d {
