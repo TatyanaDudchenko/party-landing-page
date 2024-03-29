@@ -72,12 +72,10 @@ html {
 
 .promo {
     background: #e16161;
-    /* min-height: 298px; */
-    /* min-height: var(--promo-height); */
     margin-top: -259px!important;
     border-radius: 40px;
     max-width: calc(var(--safe-frame) - 87px)!important;
-    padding: 64px;
+    padding: 63px;
     box-sizing: border-box;
 }
 
@@ -92,9 +90,8 @@ html {
     box-sizing: border-box;
     background: #2a352a;
     min-height: 948px;
-    display: flex;
     flex-direction: column;
-    padding-top: 125px;
+    padding-top: 128px;
     padding-bottom: 159px;
 }
 
@@ -153,27 +150,31 @@ html {
 
 .offer-screen {
     background: #c5692b;
-    min-height: 1071px;
-    box-sizing: border-box;
-    padding-top: 120px;
+    padding-top: 119px;
     padding-bottom: 134px;
-    display: flex;
+}
+
+.offer-screen .safe-frame {
+    min-height: 819px;
     flex-direction: column;
+}
+
+.cards {
+    margin-top: 56px;
+    display: grid;
+    grid-gap: 26px;
+    border: 1px solid green;
+}
+
+.offer-screen .cards {
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 313px);
 }
 
 .offer-screen .card {
     max-width: 317px;
     flex-direction: column;
     height: 100%;
-}
-
-.offer-screen .safe-frame {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 57px;
-    display: grid;
-    grid-template-columns: repeat(4, 313px);
-    grid-gap: 26px;
 }
 
 .offer-screen .card-image {
@@ -187,19 +188,28 @@ html {
 .halls-screen {
     box-sizing: border-box;
     background: #b91467;
-    min-height: 1580px;
-    padding-top: 125px;
+    min-height: 1579px;
+    padding-top: 120px;
     flex-direction: column;
     position: relative;
     margin-bottom: -167px;
+}
+
+.halls-screen .cards {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    min-height: 1336px;
+}
+
+.halls-screen .card {
+    background: yellowgreen;
+    border-radius: 21px;
 }
 
 .screen-a {
     background: #69dfd7;
     min-height: 970px;
     padding-top: 1px;
-    /* display: flex; */
-    /* box-sizing: border-box; */
 }
 
 .screen-a .promo-container {
@@ -218,15 +228,6 @@ html {
     height: 396px;
 }
 
-/* .screen-a .underlay-promo {
-    min-height: 223px;
-}
-
-.screen-a .promo {
-    min-height: 298px;
-    margin-top: -259px!important;
-} */
-
 .screen-b {
     background: #22af0f;
     min-height: 964px;
@@ -234,10 +235,8 @@ html {
 
 .screen-c {
     background: #c5692b;
-    padding-top: 125px;
-    /* box-sizing: border-box; */
+    padding-top: 123px;
     padding-bottom: 113px;
-    /* min-height: 1216px; */
 }
 
 .screen-c .safe-frame {
@@ -248,12 +247,16 @@ html {
 
 .screen-d {
     background: #22af0f;
-    min-height: 870px;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    min-height: 936px;
+    flex-direction: column;
 }
 
 .screen-e {
     background: #c5692b;
-    min-height: 1218px;
+    min-height: 1151px;
 }
 
 .screen-f {
