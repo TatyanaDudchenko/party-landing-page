@@ -52,7 +52,7 @@ html {
 .main-screen .safe-frame {
     background: #744b4b;
     min-height: 949px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .main-screen .title {
@@ -240,8 +240,8 @@ html {
 }
 
 .screen-c .safe-frame {
-    min-height: 978px;
-    display: flex;
+    min-height: 977px;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -263,6 +263,46 @@ html {
     background: #22af0f;
     min-height: 1406px;
 }
+
+.screen-g {
+    background: #c5692b;
+    padding-top: 121px;
+    padding-bottom: 127px;
+}
+
+.screen-g .safe-frame {
+    min-height: 980px;
+    flex-direction: column;
+}
+
+.screen-h {
+    background: #22af0f;
+    min-height: 1097px;
+    padding-bottom: 135px;
+    box-sizing: border-box;
+    padding-top: 121px;
+    flex-direction: column;
+}
+
+.screen-h .card {
+    align-self: flex-end; /* так же как и у needs-screen*/
+}
+
+.screen-h .card-text { /* так же как и у needs-screen*/
+    padding-top: 56px;
+    padding-right: 56px;
+    padding-bottom: 56px;
+}
+
+.screen-h .card-image { /* так же как и у needs-screen*/
+    min-width: 141px;
+    min-height: 200px;
+}
+
+/* .company-message-card {
+    margin-top: 128px;
+    max-width: 542px;
+} */
 
 /* =============================================================== */
 /* 
