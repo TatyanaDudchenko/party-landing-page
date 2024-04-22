@@ -52,7 +52,6 @@ html {
 .main-screen .safe-frame {
     background: #744b4b;
     min-height: 949px;
-    /* width: 100%; */
 }
 
 .main-screen .title {
@@ -299,10 +298,30 @@ html {
     min-height: 200px;
 }
 
-/* .company-message-card {
-    margin-top: 128px;
+.social-networks-card {
     max-width: 542px;
-} */
+}
+
+.screen-o {
+    background: #c5692b;
+    padding-top: 121px;
+    padding-bottom: 127px;
+}
+
+.screen-o .safe-frame {
+    min-height: 1189px;
+    flex-direction: column;
+}
+
+.screen-o .title { /* также как и screen */
+    max-width: 462px;
+    align-self: start;
+    margin-top: 118px;
+}
+
+.promo-container .reservation {
+    min-height: 461px;
+}
 
 /* =============================================================== */
 /* 
