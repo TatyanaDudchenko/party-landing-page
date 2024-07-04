@@ -3,6 +3,7 @@
     /* --background-primary: #fff; */
     --safe-frame: 1344px;
     --font-primary: Arial, sans-serif;
+    --color-accent: #6141b8;
 }
 
 html {
@@ -24,7 +25,7 @@ html {
     background: #413e3e;
     position: sticky;
     top: 0;
-    height: 112px;
+    height: 111px;
     display: flex;
     align-items: center;
 }
@@ -42,12 +43,89 @@ html {
     align-items: center;
 }
 
-.company-info-list {
+.company-title {
     display: flex;
-    max-width: 868px;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 401px;
+}
+
+.logo {
+    width: 161px;
+    height: 31px;
+    background-image: url(./images/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.decorative-line {
+    width: 3px;
+    height: 29px;
+    background-image: url(./images/decorative-line.svg);
+    background-size: contain;
+}
+
+.company-name {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    max-width: 176px;
+}
+
+.company-info {
+    display: flex;
+    max-width: 867px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 17px;
+}
+
+.schedule-icon {
+    background-image: url(./images/icon-schedule.svg);
+}
+
+.geolocation-icon {
+    background-image: url(./images/icon-geolocation.svg);
+}
+
+.phone-icon {
+    background-image: url(./images/icon-phone.svg);
+}
+
+.schedule {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.schedule-day {
+    color: #b19cd7;
+}
+
+.address {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: underline dotted;
+}
+
+.phone {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--color-accent);
 }
 
 .main-screen {
@@ -328,96 +406,6 @@ html {
 .promo-container .reservation {
     min-height: 461px;
 }
-
-/* =============================================================== */
-/* 
-.logo {
-    width: 175px;
-    height: 40px;
-    background-image: url(./images/logo.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
-
-/* =============================================================== */
-
-/* 
-.company-title-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 414px;
-}
-
-.decorative-line {
-    width: 4px;
-    height: 29px;
-    background-image: url(./images/decorative-line.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.company-name {
-    font-size: 14px;
-    font-weight: 500;
-    max-width: 175px;
-}
-
-.list-item {
-    display: flex;
-    align-items: center;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 18px;
-}
-
-.schedule-title {
-    margin-top: 0; /* reset browser margin */ /*
-    margin-bottom: 0; /* reset browser margin */ /*
-    font-size: 14px;
-    font-weight: 500;
-    color: #b19cd7;
-}
-
-.schedule-mode {
-    margin-top: 0; /* reset browser margin */ /*
-    margin-bottom: 0; /* reset browser margin */ /*
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.schedule-icon {
-    background-image: url(./images/icon-schedule.svg);
-}
-
-.geolocation-icon {
-    background-image: url(./images/icon-geolocation.svg);
-}
-
-.geolocation {
-    font-size: 14px;
-    font-weight: 600;
-    color: #6141b8;
-    text-decoration: underline dotted;
-}
-
-.phone-icon {
-    background-image: url(./images/icon-phone.svg);
-}
-
-.phone-number {
-    font-size: 18px;
-    font-weight: 900;
-    color: #6141b8;
-} */
 
 /* =============================================================== */
 
