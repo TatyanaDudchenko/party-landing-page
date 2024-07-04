@@ -2,6 +2,7 @@
     --text-primary:#181a2f;
     /* --background-primary: #fff; */
     --safe-frame: 1344px;
+    --font-primary: Arial, sans-serif;
 }
 
 html {
@@ -13,28 +14,19 @@ html {
     max-width: 100%;
     min-width: 320px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary);
     color: var(--text-primary);
     font-size: 1em;
+    height: 100%;
 }
 
 .header {
     background: #413e3e;
     position: sticky;
-    height: 112px;
-    /*     
-    width: 100px;
-    height: 100px;
-    background-color: rgb(245 242 249 / 0%);
-    padding: 36px 260px 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    position: sticky;
     top: 0;
-    z-index: 1; */
-    /* width: 1843px; */ /* не получается сделать хэдер на всю ширину экрана */
-    /* width: 100%; */
+    height: 112px;
+    display: flex;
+    align-items: center;
 }
 
 .safe-frame {
@@ -42,6 +34,20 @@ html {
     margin: 0 auto;
     max-width: var(--safe-frame);
     display: flex;
+}
+
+.header .safe-frame {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info-list {
+    display: flex;
+    max-width: 868px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-screen {
@@ -357,14 +363,6 @@ html {
     font-size: 14px;
     font-weight: 500;
     max-width: 175px;
-}
-
-.company-info-list {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 90px;
-    /* min-width: 896px; */ /*
-    flex-grow: 1;
 }
 
 .list-item {
